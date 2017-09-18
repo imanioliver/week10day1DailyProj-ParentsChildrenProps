@@ -42,7 +42,7 @@ export default class ParentComponent extends Component {
     return (
       <div className="container">
         <div>
-          <input onChange={this.handleInput} type="text" placeholder="Say It, Don't Spray It!"  />
+          <input onChange={this.handleInput} type="text" placeholder="Say It, Don't Spray It!" value={this.state.whatToSay} />
         </div>
         <div>
           <ChildComponent onClick={this.handleSubmit}/>
